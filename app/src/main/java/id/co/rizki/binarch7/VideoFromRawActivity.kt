@@ -3,6 +3,7 @@ package id.co.rizki.binarch7
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.MediaController
 import id.co.rizki.binarch7.databinding.ActivityVideoFromRawBinding
 
 class VideoFromRawActivity : AppCompatActivity() {
@@ -39,5 +40,10 @@ class VideoFromRawActivity : AppCompatActivity() {
             binding.videoView.setVideoURI(Uri.parse(path))
         }
 
+
+        // Set up the media controller widget and attach it to the video view.
+        val controller = MediaController(this)
+        controller.setMediaPlayer(binding.videoView)
+        binding.videoView.setMediaController(controller)
     }
 }

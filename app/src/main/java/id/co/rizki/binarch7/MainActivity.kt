@@ -89,6 +89,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.btnPlayInternet.setOnClickListener {
+
+            val intent = Intent(this, VideoFromInternetActivity::class.java)
+
+            startActivity(intent)
+        }
+
     }
 
     private fun getJson() : String{
