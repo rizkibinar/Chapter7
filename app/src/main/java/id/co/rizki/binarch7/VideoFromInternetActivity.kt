@@ -13,7 +13,7 @@ class VideoFromInternetActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityVideoFromInternetBinding
 
-    private val URL = "https://techslides.com/demos/sample-videos/small.mp4"
+    private val URL = "http://techslides.com/demos/sample-videos/small.mp4"
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
